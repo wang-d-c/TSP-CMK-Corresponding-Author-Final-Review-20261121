@@ -1,0 +1,114 @@
+{
+  "inputs": {
+    "03_数据与复算/复算产物/statistical_reproduction.json": "7045cc6b9d4e2ecea4667705130983914284513f063afc446562223edfa50259",
+    "03_数据与复算/复算产物/map_effects.csv": "eec46d1b5c11f0c594a74aefc9eeb2bac4cc895503310ba76233b4dc9b6c912e",
+    "02_方法与统计补充/当前批次探索分析/results/start_end_pairs.csv": "038910de28cd56dd09245dc4100a98cb0ed38931c131de2e3f6633fbb5c5578a",
+    "02_方法与统计补充/当前批次探索分析/results/order_by_map.csv": "3a4ab69d2a42da55544439f5a31f129de685dc31316f67629bbee8ade7273ec2",
+    "08_独立补验与执行证据/条件续搜120/report_final/pairs_60.csv": "db8874f42a9c60aec80372601750feb4ab821036bdf02293ac6c61420bb33283",
+    "08_独立补验与执行证据/条件续搜120/report_final/diagnostics_summary.json": "ecb6b137b60227e3eb4f9194757c63f43c68ac0bee4033e2ae53b04439251bc6",
+    "08_独立补验与执行证据/条件续搜120/report_final/R14_paired_distribution.png": "c08a347ae21d3055fdd9048f0a9b45901ac7ae7d1f9029389080f07ff8039983",
+    "08_独立补验与执行证据/条件续搜120/report_final/R14_paired_distribution.pdf": "6e75ea792e0698abaf4446b0faab5144d93e610a81e8754970b99f3032679301"
+  },
+  "outputs": {
+    "fig1_primary.pdf": "83c9df98d35427273c1d818f664471efb13ddb8cea69910be47c69ef30293d88",
+    "fig1_primary.png": "2253bed5a654f606c820bb4af39158ef53618f4e5579265dd0ce61c95b8f9d18",
+    "fig2_maps.pdf": "245dc048d12505beadca7ebeb91aa6098331d81dce900ea9d096a6758d486e8a",
+    "fig2_maps.png": "20be365535cc047828f625414c0b0951a0f1ff5e872f620e3bcb8b8674fb4a90",
+    "fig3_start_finish.pdf": "4ae82129dd35680316241ef9c6096c56c4791a124a6c4b178b6735226a1f7f2e",
+    "fig3_start_finish.png": "5b917b4ae1be812008a1d3e1b06d0e63294c51cf2b58a16ac4cf66140b9917e8",
+    "fig4_order.pdf": "a36cd568f268a9bf6b0c556872c7252b8d7a2f3442609a7ef45d0c6807533ace",
+    "fig4_order.png": "f63d07a26560e6f6573f168d5b70c8b8bd92678df4cdde0d21a9abbb674db9e3",
+    "fig5_r14.pdf": "6e75ea792e0698abaf4446b0faab5144d93e610a81e8754970b99f3032679301",
+    "fig5_r14.png": "c08a347ae21d3055fdd9048f0a9b45901ac7ae7d1f9029389080f07ff8039983"
+  },
+  "figure3": {
+    "plotted_pairs": 198,
+    "byte_identical_starts": 17,
+    "shorter_starts": 181,
+    "all_negative_tail_points_retained": true,
+    "y_equals_x_in_both_panels": true
+  },
+  "figure4_map_count": 20,
+  "figure5": {
+    "valid_seed_pairs": 60,
+    "original_image_bytes": true,
+    "pools": 3
+  },
+  "asset_migration": [
+    {
+      "from": "02_方法与统计补充/审计修订图/fig1_primary.pdf",
+      "to": "assets/figures/fig1_primary.pdf",
+      "sha256": "83c9df98d35427273c1d818f664471efb13ddb8cea69910be47c69ef30293d88"
+    },
+    {
+      "from": "02_方法与统计补充/审计修订图/fig1_primary.png",
+      "to": "assets/figures/fig1_primary.png",
+      "sha256": "2253bed5a654f606c820bb4af39158ef53618f4e5579265dd0ce61c95b8f9d18"
+    },
+    {
+      "from": "02_方法与统计补充/审计修订图/fig2_maps.pdf",
+      "to": "assets/figures/fig2_maps.pdf",
+      "sha256": "245dc048d12505beadca7ebeb91aa6098331d81dce900ea9d096a6758d486e8a"
+    },
+    {
+      "from": "02_方法与统计补充/审计修订图/fig2_maps.png",
+      "to": "assets/figures/fig2_maps.png",
+      "sha256": "20be365535cc047828f625414c0b0951a0f1ff5e872f620e3bcb8b8674fb4a90"
+    },
+    {
+      "from": "02_方法与统计补充/审计修订图/fig3_start_finish.pdf",
+      "to": "assets/figures/fig3_start_finish.pdf",
+      "sha256": "4ae82129dd35680316241ef9c6096c56c4791a124a6c4b178b6735226a1f7f2e"
+    },
+    {
+      "from": "02_方法与统计补充/审计修订图/fig3_start_finish.png",
+      "to": "assets/figures/fig3_start_finish.png",
+      "sha256": "5b917b4ae1be812008a1d3e1b06d0e63294c51cf2b58a16ac4cf66140b9917e8"
+    },
+    {
+      "from": "02_方法与统计补充/审计修订图/fig4_order.pdf",
+      "to": "assets/figures/fig4_order.pdf",
+      "sha256": "a36cd568f268a9bf6b0c556872c7252b8d7a2f3442609a7ef45d0c6807533ace"
+    },
+    {
+      "from": "02_方法与统计补充/审计修订图/fig4_order.png",
+      "to": "assets/figures/fig4_order.png",
+      "sha256": "f63d07a26560e6f6573f168d5b70c8b8bd92678df4cdde0d21a9abbb674db9e3"
+    },
+    {
+      "from": "02_方法与统计补充/审计修订图/fig5_r14.pdf",
+      "to": "assets/figures/fig5_r14.pdf",
+      "sha256": "6e75ea792e0698abaf4446b0faab5144d93e610a81e8754970b99f3032679301"
+    },
+    {
+      "from": "02_方法与统计补充/审计修订图/fig5_r14.png",
+      "to": "assets/figures/fig5_r14.png",
+      "sha256": "c08a347ae21d3055fdd9048f0a9b45901ac7ae7d1f9029389080f07ff8039983"
+    },
+    {
+      "from": "03_数据与复算/复算产物/pair_ecdf.pdf",
+      "to": "assets/figures/figS1_pair_ecdf.pdf",
+      "sha256": "f5d9167a00a30f8a940ae15f32509c0c34b5f5d68c59e3f486537cf9a8360f64"
+    },
+    {
+      "from": "03_数据与复算/复算产物/pair_ecdf.png",
+      "to": "assets/figures/figS1_pair_ecdf.png",
+      "sha256": "c81e7579315a2b03627fe346360e9c0a318808a4ae42ad749bc2e567586aa7b2"
+    },
+    {
+      "from": "08_独立补验与执行证据/EAX200/本轮公平性审计/EAX_map_effects_and_near_zero_detail.pdf",
+      "to": "assets/figures/figS2_eax_map_effects.pdf",
+      "sha256": "f26c86316dcf4243d7e381c6972ad524c994698eccffb68fc4e3f06917caa57d"
+    },
+    {
+      "from": "08_独立补验与执行证据/EAX200/本轮公平性审计/EAX_map_effects_and_near_zero_detail.png",
+      "to": "assets/figures/figS2_eax_map_effects.png",
+      "sha256": "34bcad24b4966031d651c3869c17e71522aa14220e5aaaa53c4f9c948e06e058"
+    },
+    {
+      "from": "02_方法与统计补充/审计修订图/redraw_main.py",
+      "to": "assets/figures/redraw_main.py",
+      "sha256": "5ea0a1586f855a7175da3c978fad1eeaffa703c47eed71f202a1b23c88c86c8f"
+    }
+  ]
+}

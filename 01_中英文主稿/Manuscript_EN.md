@@ -90,7 +90,7 @@ All 600 scheduled C/M/K runs reached terminal status. C, M and K delivered 198, 
 
 The K/M map median was +5.76 ppm. Twelve map means were positive and eight were negative. C10k.0 had the most negative map mean (−263.07 ppm across nine eligible pairs). The leave-one-map K/M mean ranged from −14.02 to +3.34 ppm. The primary estimate retains all 20 maps. Table 3 and Figure 2 give the strata and per-map results. Supplementary Figure S1 gives the pair-weighted ECDF. The descriptive K/M effects vary in direction across the four strata. Map structure and other instance characteristics vary together in this panel. Supplementary Table S4 shows all three comparisons on the 196 groups in which C, M and K each delivered, with the original comparison-specific samples kept for the registered tests.
 
-![Figure 1. Map-equal reductions and 95% percentile map bootstrap intervals for the three current comparisons. Positive ppm favors the left arm. The whiskers are marginal intervals. The secondary p-values in Table 2 use the original four-comparison Holm family.](../02_方法与统计补充/审计修订图/fig1_primary.png){width=94%}
+![Figure 1. Map-equal reductions and 95% percentile map bootstrap intervals for the three current comparisons. Positive ppm favors the left arm. The whiskers are marginal intervals. The secondary p-values in Table 2 use the original four-comparison Holm family.](../assets/figures/fig1_primary.png){width=94%}
 
 The paid common prefix averaged 51.394 s across 200 pools. Among the 198 jointly valid M/K pairs, M and K launched their continuation solver at mean charged times of 52.803 and 53.066 s respectively. The paired launch difference of 0.262 s includes preparation, checks and system overhead. Across 200 K arms, the three external process intervals from launch to observed Job-empty state summed to 0.131 s on average per arm. These intervals include process overhead and end when exit is observed. They cannot explain the quality differences on their own.
 
@@ -105,7 +105,7 @@ Supplementary Table S3 and the event-accounting note separate measured phases on
 | DIMACS uniform | 5 | +5.98 | +1.77 | −4.21 |
 | Geographic | 5 | +14.88 | +47.83 | +32.21 |
 
-![Figure 2. Mean of the valid matched-seed effects within each of the 20 maps. Positive ppm favors the left arm. The dashed line marks zero.](../02_方法与统计补充/审计修订图/fig2_maps.png){width=94%}
+![Figure 2. Mean of the valid matched-seed effects within each of the 20 maps. Positive ppm favors the left arm. The dashed line marks zero.](../assets/figures/fig2_maps.png){width=94%}
 
 ### 5.2 Selected starts and delivered tours
 
@@ -123,7 +123,7 @@ K started shorter in 181/198 pairs (91.41%). It ended longer in 71/181 of those 
 
 The three largest negative effects came from two maps (C10k.0/981 and genC15k.seed100004/2521 and /1861). They contribute −12.35, −8.14, −5.92 ppm, respectively, to the fully weighted primary estimate, with nine valid pairs on C10k.0 and ten on genC15k.seed100004. All valid scores remain in the main analysis. Supplementary Table S5 gives the disjoint time accounting and Table S6 gives the tail cases and post hoc sensitivity. Figure 3 shows the relation between starting and final tour effects.
 
-![Figure 3. Exploratory starting versus final tour effects for all 198 valid M/K pairs. Filled and open marks distinguish strictly shorter and byte-identical starts. The dashed diagonals mark equal starting and final ppm. The full panel retains the large negative tail. The zoom reproduces the same points; labels identify exact overlaps.](../02_方法与统计补充/审计修订图/fig3_start_finish.png){width=94%}
+![Figure 3. Exploratory starting versus final tour effects for all 198 valid M/K pairs. Filled and open marks distinguish strictly shorter and byte-identical starts. The dashed diagonals mark equal starting and final ppm. The full panel retains the large negative tail. The zoom reproduces the same points; labels identify exact overlaps.](../assets/figures/fig3_start_finish.png){width=94%}
 
 ### 5.3 Execution-order sensitivity
 
@@ -131,7 +131,7 @@ The frozen schedule assigned five M-first and five K-first groups per map using 
 
 Giving the two observed orders equal weight within each map gives −8.34 ppm as a post hoc K/M estimate. The registered all-valid-pair result remains −9.98 ppm. The audit records actual dispatch times, schedule epochs, the previously dispatched formal task, C position, and measured preparation and continuation. Thermal state, cache and scheduler effects, workload variation and stopping behavior cannot be separated using these observations. Figure 4 shows the order contrasts by map. The association does not identify heat throttling or explain the earlier R4 result.
 
-![Figure 4. Exploratory execution-order sensitivity on the 20 maps. Left: map-level K/M effect within each order. Right: paired map contrasts K-first minus M-first. The distribution includes all matched valid pairs, with maps weighted equally.](../02_方法与统计补充/审计修订图/fig4_order.png){width=94%}
+![Figure 4. Exploratory execution-order sensitivity on the 20 maps. Left: map-level K/M effect within each order. Right: paired map contrasts K-first minus M-first. The distribution includes all matched valid pairs, with maps weighted equally.](../assets/figures/fig4_order.png){width=94%}
 
 ### 5.4 Earlier exploratory cohorts
 
@@ -139,11 +139,11 @@ V22 and R4 used different samples, configurations and execution environments. V2
 
 ### 5.5 Separate follow-up batches
 
-The EAX follow-up ran separately on 21 November 2026 from 13:47:30 to 19:21:31 Beijing time (UTC+08:00). All 200 assignments reached a terminal state and 199 delivered independently verified tours. Each contrast uses 198 valid pairs across 20 maps. M/EAX gave 159/2/37 shorter/tied/longer tours and a map-equal mean of +24030.25 ppm (95% interval [+6763.64, +50836.32]). K/EAX gave 164/3/31 and +24008.70 ppm (95% interval [+6742.41, +50802.43]). The valid EAX tour length is the denominator. Both p values are 0.000103 after Holm adjustment in the separate two-comparison family. Supplement S5 documents configuration, missing pairs and terminal evidence.
+The EAX follow-up (Npop = 100, Nch = 30) ran separately on 21 November 2026 from 13:47:30 to 19:21:31 Beijing time (UTC+08:00). All 200 assignments reached a terminal state and 199 delivered independently verified tours. Each contrast uses 198 valid pairs across 20 maps. M/EAX gave 159/2/37 shorter/tied/longer tours and a map-equal mean of +24,030.25 ppm (95% interval [+6,763.64, +50,836.32]). K/EAX gave 164/3/31 and +24,008.70 ppm (95% interval [+6,742.41, +50,802.43]). The valid EAX tour length is the denominator. Both p values are 0.000103 after Holm adjustment in the separate two-comparison family. Supplement S5 documents configuration, missing pairs and terminal evidence.
 
-Table 5A shows substantial variation across the fixed panel. At xmc10150, EAX delivered a shorter tour than M in all ten pairs (M/EAX −309.97 ppm), whereas at genC15k.seed100004 the mean was +236720.81 ppm. On 12 smaller maps (8,246–10,639 cities), M/EAX and K/EAX averaged +4250.42 and +4222.60 ppm. On eight larger maps (12,000–16,928 cities), they averaged +53699.99 and +53687.85 ppm. These are descriptive size groups with differing map sources. With a target stop request at 85 s, the EAX wrapper CPU median was 13.23 s on the same logical core as the solver. That total includes coordination and validation. It cannot identify isolated wall-clock overhead or the quality an uninstrumented solver would deliver.
+Table 5, Panel A, shows substantial variation across the fixed panel. At xmc10150, EAX delivered a shorter tour than M in all ten pairs (M/EAX −309.97 ppm), whereas at genC15k.seed100004 the mean was +236,720.81 ppm. On 12 smaller maps (8,246–10,639 cities), M/EAX and K/EAX averaged +4,250.42 and +4,222.60 ppm. On eight larger maps (12,000–16,928 cities), they averaged +53,699.99 and +53,687.85 ppm. These are descriptive size groups with differing map sources. With a target stop request at 85 s, the EAX wrapper CPU median was 13.23 s on the same logical core as the solver. That total includes coordination and validation. It cannot identify isolated wall-clock overhead or the quality an uninstrumented solver would deliver.
 
-The 30 s fixed-start diagnostic delivered all 120 verified tours. It reused historical starts from three selected pools on two maps. Each seed continued from both starts, with 20 new seeds per pool and ten per order. Table 5B and Figure 5 give the 60 paired outcomes by pool. The continuation timer excludes generation of the starts and the parent pools. The separate 800-slot mechanism protocol remains deferred.
+The 30 s fixed-start diagnostic delivered all 120 verified tours. It reused historical starts from three selected pools on two maps. Each seed continued from both starts, with 20 new seeds per pool and ten per order. Table 5, Panel B, and Figure 5 give the 60 paired outcomes by pool. The continuation timer excludes generation of the starts and the parent pools. The separate 800-slot mechanism protocol remains deferred.
 
 **Table 5. Outcomes of the separately analyzed follow-ups.** Panel A gives map-equal effects and matched-seed counts. Positive values favor M or K. Panel B gives means, shorter/tied/longer counts and 95% seed-bootstrap intervals within each fixed pool. Positive values favor K.
 
@@ -151,26 +151,26 @@ The 30 s fixed-start diagnostic delivered all 120 verified tours. It reused hist
 
 | Source stratum | Maps | M/EAX ppm | M/EAX S/T/L | K/EAX ppm | K/EAX S/T/L |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| VLSI engineering | 5 | +5980.16 | 31/1/18 | +5959.93 | 33/1/16 |
-| DIMACS clustered | 5 | +71670.28 | 49/0/0 | +71582.84 | 50/0/0 |
-| DIMACS uniform | 5 | +13646.22 | 49/0/0 | +13652.82 | 49/0/0 |
-| Geographic | 5 | +4824.33 | 30/1/19 | +4839.21 | 32/2/15 |
+| VLSI engineering | 5 | +5,980.16 | 31/1/18 | +5,959.93 | 33/1/16 |
+| DIMACS clustered | 5 | +71,670.28 | 49/0/0 | +71,582.84 | 50/0/0 |
+| DIMACS uniform | 5 | +13,646.22 | 49/0/0 | +13,652.82 | 49/0/0 |
+| Geographic | 5 | +4,824.33 | 30/1/19 | +4,839.21 | 32/2/15 |
 
 **Panel B. Fixed-start continuation**
 
 | Parent pool | Pairs | K/M S/T/L | Mean ppm | 95% conditional interval, ppm |
 | --- | ---: | ---: | ---: | ---: |
-| C10k.0/981 | 20 | 14/0/6 | +716.29 | [+251.78, +1200.80] |
+| C10k.0/981 | 20 | 14/0/6 | +716.29 | [+251.78, +1,200.80] |
 | genC15k.seed100004/2521 | 20 | 12/0/8 | −109.03 | [−371.59, +139.14] |
 | genC15k.seed100004/1861 | 20 | 8/0/12 | −219.79 | [−664.72, +273.42] |
 
-![Figure 5. The original R14 distribution for all 60 paired seed effects, shown by fixed parent pool. Positive ppm favors K. Intervals are conditional within each pool.](../02_方法与统计补充/审计修订图/fig5_r14.png){width=91%}
+![Figure 5. Distribution of all 60 paired seed effects in the 30 s fixed-start continuation diagnostic, shown by fixed parent pool. Positive ppm favors K. Intervals are conditional within each pool.](../assets/figures/fig5_r14.png){width=91%}
 
 ## 6. Discussion
 
 The same-parent comparison measures what three extra external GPX2 calls return on the full charged clock. K started shorter in 181 of 198 pairs, yet 71 of those 181 pairs (39.23%) reversed by the deadline. The larger negative effects on a few maps brought the equal-map mean below zero. Its interval spans gains and losses. Both M and K shortened tours on average relative to the configured C reference in their valid paired samples under the registered Holm analysis.
 
-The conditional C10k.0/981 comparison reused the starts associated with the −2223.46 ppm primary result. With 20 new seeds and equal continuation windows, K had 14 shorter, zero tied and six longer tours, with a mean of +716.29 ppm. The M-first and K-first subsets gave +537.91 and +894.68 ppm. The two genC15k.seed100004 pools gave negative means with intervals spanning zero. Variation across seeds and pools is compatible with the observed reversals. A single primary tail event cannot identify a consistently inferior search basin. The diagnostic also cannot determine how much of the full-budget tail was due to variation across seeds, startup, or time allocation.
+The conditional C10k.0/981 comparison reused the starts associated with the −2,223.46 ppm primary result. With 20 new seeds and equal continuation windows, K had 14 shorter, zero tied and six longer tours, with a mean of +716.29 ppm. The M-first and K-first subsets gave +537.91 and +894.68 ppm. The two genC15k.seed100004 pools gave negative means with intervals spanning zero. Variation across seeds and pools is compatible with the observed reversals. A single primary tail event cannot identify a consistently inferior search basin. The diagnostic also cannot determine how much of the full-budget tail was due to variation across seeds, startup, or time allocation.
 
 The observed difference between execution orders warrants balancing order in short-budget benchmarks. The sign-flip and within-map permutation checks differ in their assumptions and recorded evidence cannot separate thermal state, cache, scheduling and workload. V22, R4 and this study retain separate estimates. The favorable EAX cases at the lower end of the size panel, along with larger gaps on some 12,000–16,928-city maps, describe complementarity under the tested configuration. Map structure, initialization work, finite search time, within-budget observation and the separate execution period were not varied independently.
 
@@ -186,33 +186,33 @@ Under the registered 90 s conditions, there is no stable average net gain suppor
 
 ## Reproducibility and declarations
 
-The author-review artifact contains the current numeric ledger, input and version manifests, a separately runnable CSV statistics and plotting workflow, and route-hash and length verification material. Existing tours can be checked against the exact coordinate bytes and authorized city-order files. The author-access appendix identifies the public sources, the items requiring authorized transfer, and the materials needed for a timed native Windows rerun. Access and redistribution are subject to the recorded terms. The release link for the previously analyzed batches is the [historical review repository](https://github.com/wang-d-c/TSP-SCI-Reproducibility-And-Evidence-20261118). Those public numerical records and historical route checks pertain to V22 and R4.
+The [current versioned public release](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-author-review-v3-20261121) supplies numerical ledgers, figures and the CSV-based workflow for statistical reproduction. Verifying stored tours requires the matching coordinate bytes and authorized city-order files. Timed reruns also require the frozen native implementation and a Windows setup that meets the original resource rules. The author-access appendix lists source and transfer conditions. The [historical V22/R4 repository](https://github.com/wang-d-c/TSP-SCI-Reproducibility-And-Evidence-20261118) holds the earlier batches and historical route checks.
 
 Authors, affiliations, corresponding author contact, final approval, funding and competing interests are to be confirmed by the authors before submission.
 
 ## AI assistance
 
-ChatGPT and Codex assisted research design, code development, analysis and manuscript preparation. The authors will confirm the scope, placement and wording of the disclosure against the selected journal policy before submission and will take responsibility for the submitted text and evidence.
+ChatGPT and Codex assisted research design, code development, analysis and manuscript preparation. Gemini-generated review reports also informed editorial verification. The authors will confirm the scope, placement and wording of the disclosure against the selected journal policy before submission and will take responsibility for the submitted text and evidence.
 
 ## References
 
-1. Helsgaun, K. (2000). An effective implementation of the Lin–Kernighan traveling salesman heuristic. *European Journal of Operational Research*, 126(1), 106–130. https://doi.org/10.1016/S0377-2217(99)00284-2
-2. Tinós, R., Helsgaun, K., & Whitley, D. (2018). Efficient recombination in the Lin–Kernighan–Helsgaun traveling salesman heuristic. *Parallel Problem Solving from Nature*, LNCS 11101, 95–107. https://doi.org/10.1007/978-3-319-99253-2_8
-3. Tinós, R., Whitley, D., & Ochoa, G. (2020; online 2019). A new generalized partition crossover for the traveling salesman problem: Tunneling between local optima. *Evolutionary Computation*, 28(2), 255–288. https://doi.org/10.1162/evco_a_00254
-4. Hains, D., Whitley, D., & Howe, A. (2012). Improving Lin–Kernighan–Helsgaun with crossover on clustered instances of the TSP. *PPSN XII*, 388–397. https://doi.org/10.1007/978-3-642-32964-7_39
-5. Helsgaun, K. (2009). General k-opt submoves for the Lin–Kernighan TSP heuristic. *Mathematical Programming Computation*, 1, 119–163. https://doi.org/10.1007/s12532-009-0004-6
-6. Helsgaun, K. (2017). An extension of the Lin–Kernighan–Helsgaun TSP solver for constrained traveling salesman and vehicle routing problems. Technical report, Roskilde University. https://forskning.ruc.dk/da/publications/an-extension-of-the-lin-kernighan-helsgaun-tsp-solver-for-constra/
-7. Taillard, É. D., & Helsgaun, K. (2019). POPMUSIC for the travelling salesman problem. *European Journal of Operational Research*, 272(2), 420–429. https://doi.org/10.1016/j.ejor.2018.06.039
-8. Friedrich, T., Kötzing, T., & Wagner, M. (2017). A generic bet-and-run strategy for speeding up stochastic local search. *AAAI Conference on Artificial Intelligence*, 31, 801–807. https://doi.org/10.1609/aaai.v31i1.10645
-9. Weise, T., Wu, Z., & Wagner, M. (2019). An improved generic bet-and-run strategy with performance prediction for stochastic local search. *AAAI Conference on Artificial Intelligence*, 33, 2395–2402. https://doi.org/10.1609/aaai.v33i01.33012395
-10. Zhang, W., & Looks, M. (2005). A novel local search algorithm for the traveling salesman problem that exploits backbones. *IJCAI*, 343–349. https://ijcai.org/proceedings/2005/182
-11. Heins, J., Schäpermeier, L., Kerschke, P., & Whitley, D. (2024). Dancing to the state of the art? How candidate lists influence LKH for solving the traveling salesperson problem. *PPSN XVIII*, LNCS 15148, 100–115. https://doi.org/10.1007/978-3-031-70055-2_7
-12. de Carvalho, O. Q., & Whitley, D. (2025). Dramatically faster partition crossover for the traveling salesman problem. *GECCO ’25*, 818–826. https://doi.org/10.1145/3712256.3726465
-13. McMenemy, P., Veerapen, N., Adair, J., & Ochoa, G. (2019). Rigorous performance analysis of state-of-the-art TSP heuristic solvers. *EvoCOP*, LNCS 11452, 99–114. https://doi.org/10.1007/978-3-030-16711-0_7. Associated dataset record: https://datastorre.stir.ac.uk/handle/11667/127 (CC BY 4.0 for the 14 included instance files).
+1. Helsgaun K. An effective implementation of the Lin–Kernighan traveling salesman heuristic. Eur J Oper Res. 2000;126(1):106–130. https://doi.org/10.1016/S0377-2217(99)00284-2
+2. Tinós R, Helsgaun K, Whitley D. Efficient recombination in the Lin–Kernighan–Helsgaun traveling salesman heuristic. In: Parallel Problem Solving from Nature – PPSN XV. Cham: Springer; 2018. p. 95–107. https://doi.org/10.1007/978-3-319-99253-2_8
+3. Tinós R, Whitley D, Ochoa G. A new generalized partition crossover for the traveling salesman problem: tunneling between local optima. Evol Comput. 2020;28(2):255–288. https://doi.org/10.1162/evco_a_00254
+4. Hains D, Whitley D, Howe A. Improving Lin–Kernighan–Helsgaun with crossover on clustered instances of the TSP. In: Parallel Problem Solving from Nature – PPSN XII. Berlin: Springer; 2012. p. 388–397. https://doi.org/10.1007/978-3-642-32964-7_39
+5. Helsgaun K. General k-opt submoves for the Lin–Kernighan TSP heuristic. Math Program Comput. 2009;1(2–3):119–163. https://doi.org/10.1007/s12532-009-0004-6
+6. Helsgaun K. An extension of the Lin–Kernighan–Helsgaun TSP solver for constrained traveling salesman and vehicle routing problems [technical report]. Roskilde: Roskilde University; 2017. https://forskning.ruc.dk/da/publications/an-extension-of-the-lin-kernighan-helsgaun-tsp-solver-for-constra/
+7. Taillard ÉD, Helsgaun K. POPMUSIC for the travelling salesman problem. Eur J Oper Res. 2019;272(2):420–429. https://doi.org/10.1016/j.ejor.2018.06.039
+8. Friedrich T, Kötzing T, Wagner M. A generic bet-and-run strategy for speeding up stochastic local search. Proc AAAI Conf Artif Intell. 2017;31(1):801–807. https://doi.org/10.1609/aaai.v31i1.10645
+9. Weise T, Wu Z, Wagner M. An improved generic bet-and-run strategy with performance prediction for stochastic local search. Proc AAAI Conf Artif Intell. 2019;33(1):2395–2402. https://doi.org/10.1609/aaai.v33i01.33012395
+10. Zhang W, Looks M. A novel local search algorithm for the traveling salesman problem that exploits backbones. In: Proceedings of the 19th International Joint Conference on Artificial Intelligence; 2005. p. 343–349. https://ijcai.org/proceedings/2005/182
+11. Heins J, Schäpermeier L, Kerschke P, Whitley D. Dancing to the state of the art? How candidate lists influence LKH for solving the traveling salesperson problem. In: Parallel Problem Solving from Nature – PPSN XVIII. Cham: Springer; 2024. p. 100–115. https://doi.org/10.1007/978-3-031-70055-2_7
+12. de Carvalho OQ, Whitley D. Dramatically faster partition crossover for the traveling salesman problem. In: Proceedings of the Genetic and Evolutionary Computation Conference. New York: ACM; 2025. p. 818–826. https://doi.org/10.1145/3712256.3726465
+13. McMenemy P, Veerapen N, Adair J, Ochoa G. Rigorous performance analysis of state-of-the-art TSP heuristic solvers. In: Evolutionary Computation in Combinatorial Optimization. Cham: Springer; 2019. p. 99–114. https://doi.org/10.1007/978-3-030-16711-0_7 Associated dataset record: https://datastorre.stir.ac.uk/handle/11667/127 (CC BY 4.0 for the 14 included instance files).
 14. Applegate DL, Bixby RE, Chvátal V, Cook WJ. The traveling salesman problem: a computational study. Princeton (NJ): Princeton University Press; 2007. https://press.princeton.edu/books/hardcover/9780691129938/the-traveling-salesman-problem
 15. Bartz-Beielstein T, Doerr C, van den Berg D, Bossek J, Chandrasekaran S, Eftimov T, et al. Benchmarking in optimization: best practice and open issues. arXiv [Preprint]. 2020. https://doi.org/10.48550/arXiv.2007.03488
 16. Hansen N, Auger A, Brockhoff D, Tušar D, Tušar T. COCO: performance assessment. arXiv [Preprint]. 2016. https://doi.org/10.48550/arXiv.1605.03560
-17. Reinelt, G. (1991). TSPLIB—A traveling salesman problem library. *ORSA Journal on Computing*, 3(4), 376–384. https://doi.org/10.1287/ijoc.3.4.376
+17. Reinelt G. TSPLIB—a traveling salesman problem library. ORSA J Comput. 1991;3(4):376–384. https://doi.org/10.1287/ijoc.3.4.376
 18. Johnson DS, McGeoch LA. Experimental analysis of heuristics for the STSP. In: Gutin G, Punnen AP, editors. The traveling salesman problem and its variations. Boston: Kluwer Academic Publishers; 2002. p. 369–443. Springer electronic edition, 2007. https://doi.org/10.1007/0-306-48213-4_9
 19. DIMACS. 8th DIMACS Implementation Challenge: the traveling salesman problem [dataset archive]. Piscataway (NJ): Rutgers University. https://archive.dimacs.rutgers.edu/Challenges/TSP/download.html
 20. University of Waterloo. VLSI data sets [dataset archive]. Waterloo (ON): University of Waterloo. https://math.uwaterloo.ca/tsp/vlsi/index.html
@@ -220,5 +220,5 @@ ChatGPT and Codex assisted research design, code development, analysis and manus
 22. Hemerik J, Goeman J. Exact testing with random permutations. TEST. 2018;27:811–825. https://doi.org/10.1007/s11749-017-0571-1
 23. Efron B, Tibshirani RJ. An introduction to the bootstrap. New York: Chapman & Hall; 1993. https://doi.org/10.1201/9780429246593
 24. Holm S. A simple sequentially rejective multiple test procedure. Scand J Stat. 1979;6(2):65–70. https://www.jstor.org/stable/4615733
-25. Kerschke, P., Kotthoff, L., Bossek, J., Hoos, H. H., & Trautmann, H. (2018). Leveraging TSP solver complementarity through machine learning. *Evolutionary Computation*, 26(4), 597–620. https://doi.org/10.1162/evco_a_00215
-26. Nagata, Y., & Kobayashi, S. (2013). A powerful genetic algorithm using edge assembly crossover for the traveling salesman problem. *INFORMS Journal on Computing*, 25(2), 346–363. https://doi.org/10.1287/ijoc.1120.0506
+25. Kerschke P, Kotthoff L, Bossek J, Hoos HH, Trautmann H. Leveraging TSP solver complementarity through machine learning. Evol Comput. 2018;26(4):597–620. https://doi.org/10.1162/evco_a_00215
+26. Nagata Y, Kobayashi S. A powerful genetic algorithm using edge assembly crossover for the traveling salesman problem. INFORMS J Comput. 2013;25(2):346–363. https://doi.org/10.1287/ijoc.1120.0506

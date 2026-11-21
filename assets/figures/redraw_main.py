@@ -17,7 +17,7 @@ HERE = Path(__file__).resolve().parent
 STATS = "03_数据与复算/复算产物"
 EXPLORE = "02_方法与统计补充/当前批次探索分析/results"
 R14 = "08_独立补验与执行证据/条件续搜120/report_final"
-ART = "02_方法与统计补充/审计修订图"
+ART = "assets/figures"
 FIGURES = {
     "fig1_primary": ("overall_effects_95ci.png", STATS),
     "fig2_maps": ("map_effects.png", STATS),
