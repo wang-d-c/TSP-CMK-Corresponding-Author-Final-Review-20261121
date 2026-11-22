@@ -1,0 +1,94 @@
+[
+  {
+    "stage": "core",
+    "arguments_after_python": [
+      "-I",
+      "-S",
+      "-B",
+      "-X",
+      "utf8",
+      "03_数据与复算\\reproduce.py",
+      "--no-plot",
+      "--output",
+      "..\\numerical_replay\\three\\core"
+    ],
+    "exit": 0
+  },
+  {
+    "stage": "eax",
+    "arguments_after_python": [
+      "-I",
+      "-S",
+      "-B",
+      "-X",
+      "utf8",
+      "02_统计复算\\eax\\reproduce_eax.py",
+      "--core",
+      "03_数据与复算\\data\\core_600_runs.csv",
+      "--eax",
+      "08_独立补验与执行证据\\EAX200\\正式结果\\supplemental_eax_200.csv",
+      "--reference-dir",
+      "08_独立补验与执行证据\\EAX200\\正式结果",
+      "--figure-reference",
+      "08_独立补验与执行证据\\EAX200\\本轮公平性审计\\eax_map_effects_40.csv",
+      "--output",
+      "..\\numerical_replay\\three\\eax"
+    ],
+    "exit": 0
+  },
+  {
+    "stage": "r14",
+    "arguments_after_python": [
+      "-I",
+      "-S",
+      "-B",
+      "-X",
+      "utf8",
+      "02_统计复算\\r14\\replay_fixed_start.py",
+      "08_独立补验与执行证据\\条件续搜120\\report_final",
+      "..\\numerical_replay\\three\\r14",
+      "--plan",
+      "02_统计复算\\r14\\diagnostic_plan_120.csv"
+    ],
+    "exit": 0
+  },
+  {
+    "stage": "figures_1_to_4",
+    "arguments_after_python": [
+      "-B",
+      "-X",
+      "utf8",
+      "assets/figures/redraw_main.py",
+      ".",
+      "..\\numerical_replay\\three\\figures"
+    ],
+    "exit": 0
+  },
+  {
+    "stage": "figure_s2",
+    "arguments_after_python": [
+      "-B",
+      "-X",
+      "utf8",
+      "08_独立补验与执行证据\\EAX200\\本轮公平性审计\\render_eax_effects.py",
+      "..\\numerical_replay\\three\\eax\\eax_map_effects_40.csv",
+      "..\\numerical_replay\\three\\figure_s2"
+    ],
+    "exit": 0
+  },
+  {
+    "stage": "figure_5",
+    "arguments_after_python": [
+      "-B",
+      "-X",
+      "utf8",
+      "02_统计复算\\r14\\replay_fixed_start.py",
+      "08_独立补验与执行证据\\条件续搜120\\report_final",
+      "..\\numerical_replay\\three\\figure_5",
+      "--plan",
+      "02_统计复算\\r14\\diagnostic_plan_120.csv",
+      "--plot"
+    ],
+    "exit": 0
+  }
+]

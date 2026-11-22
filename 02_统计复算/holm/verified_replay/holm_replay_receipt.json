@@ -1,0 +1,86 @@
+{
+  "verified_input_sha256": {
+    "core_600_runs.csv": "f589f6382e02165ea575100b880b511b389a9691ce739feb638369d1d57bbbc7",
+    "supplemental_eax_200.csv": "e2b93def1296ce87d28e4619dc55d64b48b5292ea27dc31b741641a491b45f97",
+    "frozen_reference.json": "bc138ab17e18312fb262402684806b2edb5edce40e7b5f25e79e03fe0ad56385",
+    "supplemental_eax_summary.json": "54d68906b50ae09ef9c48b1734970135fb7fd9174779452a54a6e70d3fb4d05c"
+  },
+  "valid_by_arm": {
+    "K_new": 199,
+    "M_new": 199,
+    "C_ref": 198,
+    "EAX_ref": 199
+  },
+  "all_frozen_raw_p_and_pair_counts_matched": true,
+  "original_holm_a_and_b_match_frozen": true,
+  "comparison_c_is_cross_period_sensitivity": true,
+  "four_observed_secondary_decisions_unchanged_at_0_05": true,
+  "new_solver_runs": 0,
+  "records": [
+    {
+      "contrast": "K/M",
+      "maps": 20,
+      "valid_pairs": 198,
+      "extreme_sign_assignments": 679194,
+      "all_sign_assignments": 1048576,
+      "raw_p_exact": "339597/524288",
+      "raw_p": 0.6477298736572266,
+      "core_holm_a_input": null,
+      "core_holm_a_p": null,
+      "later_holm_b_p": null,
+      "four_observed_holm_c_p": null
+    },
+    {
+      "contrast": "K/C",
+      "maps": 20,
+      "valid_pairs": 197,
+      "extreme_sign_assignments": 66,
+      "all_sign_assignments": 1048576,
+      "raw_p_exact": "33/524288",
+      "raw_p": 6.29425048828125e-05,
+      "core_holm_a_input": 6.29425048828125e-05,
+      "core_holm_a_p": 0.00025177001953125,
+      "later_holm_b_p": null,
+      "four_observed_holm_c_p": 0.00020599365234375
+    },
+    {
+      "contrast": "M/C",
+      "maps": 20,
+      "valid_pairs": 197,
+      "extreme_sign_assignments": 588,
+      "all_sign_assignments": 1048576,
+      "raw_p_exact": "147/262144",
+      "raw_p": 0.000560760498046875,
+      "core_holm_a_input": 0.000560760498046875,
+      "core_holm_a_p": 0.001682281494140625,
+      "later_holm_b_p": null,
+      "four_observed_holm_c_p": 0.000560760498046875
+    },
+    {
+      "contrast": "K/EAX",
+      "maps": 20,
+      "valid_pairs": 198,
+      "extreme_sign_assignments": 54,
+      "all_sign_assignments": 1048576,
+      "raw_p_exact": "27/524288",
+      "raw_p": 5.14984130859375e-05,
+      "core_holm_a_input": 1.0,
+      "core_holm_a_p": 1.0,
+      "later_holm_b_p": 0.000102996826171875,
+      "four_observed_holm_c_p": 0.00020599365234375
+    },
+    {
+      "contrast": "M/EAX",
+      "maps": 20,
+      "valid_pairs": 198,
+      "extreme_sign_assignments": 62,
+      "all_sign_assignments": 1048576,
+      "raw_p_exact": "31/524288",
+      "raw_p": 5.91278076171875e-05,
+      "core_holm_a_input": 1.0,
+      "core_holm_a_p": 1.0,
+      "later_holm_b_p": 0.000102996826171875,
+      "four_observed_holm_c_p": 0.00020599365234375
+    }
+  ]
+}

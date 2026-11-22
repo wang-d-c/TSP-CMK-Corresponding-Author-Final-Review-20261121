@@ -1,0 +1,12 @@
+{
+  "input_sha256": {
+    "core_600_runs.csv": "f589f6382e02165ea575100b880b511b389a9691ce739feb638369d1d57bbbc7",
+    "supplemental_eax_200.csv": "e2b93def1296ce87d28e4619dc55d64b48b5292ea27dc31b741641a491b45f97"
+  },
+  "n_groups": 4,
+  "n_map_groups": 80,
+  "n_all_paired_rows": 396,
+  "hypothesis_tests": 0,
+  "new_solves": 0,
+  "meaning": "Order comes from the original M/K slots. Later EAX was separately timed."
+}

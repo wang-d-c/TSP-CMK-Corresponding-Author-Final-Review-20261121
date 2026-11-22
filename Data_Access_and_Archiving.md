@@ -1,6 +1,6 @@
 # Data access and archiving
 
-The [current review package](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-reviewer-fixes-20261122) contains portable numerical replays for three separate cohorts. The [v3 package](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-author-review-v3-20261121) and previous reference artifacts remain versioned. The 600-run main batch, the 200-slot later EAX run block, and the 120-run fixed-start diagnostic have separate time blocks and statistical scopes.
+The [current review package](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-second-review-20261122) contains portable numerical replays for three separate cohorts. The [v3 package](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-author-review-v3-20261121) and previous reference artifacts remain versioned. The 600-run main batch, the 200-slot later EAX run block, and the 120-run fixed-start diagnostic have separate time blocks and statistical scopes.
 
 | Capability | What the review package provides |
 | --- | --- |
@@ -12,3 +12,5 @@ The [current review package](https://github.com/wang-d-c/TSP-CMK-Corresponding-A
 The authors still need to confirm which routes, maps and frozen implementations may be shared and test the approved channel with the intended access scope. The study's recorded software hashes identify the frozen implementations. Distribution rights remain to be confirmed separately. [LKH upstream](https://keldhelsgaun.github.io/) · [GA-EAX upstream](https://github.com/nagata-yuichi/GA-EAX)
 
 The public package has no independently verified Zenodo deposit or DOI. Use the stated release or the corresponding commit to cite this review snapshot.
+
+[上一轮独立公开包](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-reviewer-fixes-20261122) · [二轮统计与配置核查](02_统计复算/README_第二轮.md)

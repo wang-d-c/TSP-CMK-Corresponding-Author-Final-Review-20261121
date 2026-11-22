@@ -1,0 +1,23 @@
+[
+  {
+    "task": "three_cohorts",
+    "args": [
+      "02_统计复算/replay_all.py",
+      "--output",
+      "../numerical_replay/three",
+      "--figures"
+    ],
+    "returncode": 0
+  },
+  {
+    "task": "holm",
+    "args": [
+      "02_统计复算/holm/replay_holm.py",
+      "--bundle",
+      ".",
+      "--output",
+      "../numerical_replay/holm"
+    ],
+    "returncode": 0
+  }
+]

@@ -18,7 +18,7 @@ The same-host inventory also records the two installed modules (16 + 32 GiB). Th
 
 ## S2 Common configuration and charged time
 
-The three current arms and all parent runs share the frozen LKH 3.0.14-derived Windows build. C_ref starts without a supplied tour. The continuation arms install the selected initial tour on the first full TSP trial. Initial-tour edge insertion uses the registered normal setting. The main paper uses C, M and K as abbreviated labels.
+The three current arms and all parent runs share the frozen LKH 3.0.14-derived Windows build. C_ref starts without a supplied tour. The continuation arms install the selected initial tour on the first full TSP trial. Initial-tour edge insertion uses the registered normal setting. The main paper uses C, M and K as abbreviated labels. The frozen reference preserves visible historical P5/R4 settings and does not estimate the performance of an unconfigured or best-tuned LKH.
 
 **Table S2. Common solver configuration.**
 
@@ -118,6 +118,8 @@ The exploratory map sign-flip enumerated all 1,048,576 combinations, included ti
 
 ## S5 Independent follow-up series
 
+R13a01 used a post-run check on the saved request timestamp and accepted 78 of 79 terminal attempts. R13a02 changed that check to the native termination-call timestamp and its ordered Job evidence, accepting 121 of 121. Both phases retained the same native executable, wrapper, scoring rules and 85/86/88/90 s boundaries. Replaying both stop-evidence rules against all 200 archived attempts changes the raw classification of only the first failure, e0316. Its frozen exclusion is retained, leaving 199 scored EAX attempts and 198 valid pairs per contrast under each replay with that exclusion.
+
 EAX ran in a later time block, 21 November 2026 13:47:30–19:21:31 Beijing time (UTC+08:00). All 200 dispatched attempts reached terminal status. Independent verification confirmed the 199 scored routes. The e0316 evidence failure remains in the ledger without a score. The a02 revision applies to post-run adjudication of the 121 unstarted slots. It compares the recorded termination call with the original 85 s threshold and retains the requirements for stop proof before 86 s, certification before 88 s, and cleanup before 90 s. The native EAX x64 binary, charged work and deadlines stayed fixed.
 
 The M/EAX and K/EAX contrasts each use 198 valid matched pairs across 20 maps. The EAX length is the denominator, and positive ppm favors the named LKH arm. Resampling complete maps gives the reported 95% percentile intervals. Both conditional map sign-flip tests use the EAX follow-up's own two-comparison Holm family. Figure S2 shows how the paired mean differences vary across the fixed panel. The public release supplies the numerical map effects and the English companion audit. Detailed terminal and version evidence follows the access conditions in the main paper.
@@ -146,6 +148,8 @@ Continuation-binary SHA-256: `d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea
 
 ### S5.2 Statistical specifications and numerical replay
 
+The core four-contrast secondary family and unavailable-slot p = 1 rule are explicit in the registration bound by formal admission. The later report applies Holm to its two EAX contrasts. A cross-period check applies Holm to all four observed raw p values (K/C, K/EAX and M/EAX: 0.000206; M/C: 0.000561). This check leaves the core and follow-up estimates in their original cohorts. No secondary decision changes at 0.05. The descriptive order split for later EAX uses the archived order of the core M/K runs. Its analysis groups differ from the separate 12,000-city size grouping. No additional p values were computed for those splits.
+
 All effects use 10⁶ × (reference length − test length) / reference length. Positive ppm favors the test arm. Equal verified integer lengths count as ties. Quality calculations require a valid outcome from each arm in the relevant pair. Missing or invalid deliveries remain in the delivery accounting.
 
 | Series | Pairing, reference, and analysis unit | 95% percentile interval | Test and multiplicity |
@@ -156,4 +160,15 @@ All effects use 10⁶ × (reference length − test length) / reference length. 
 
 All percentile intervals use linear interpolation at (B−1)q in the sorted B draws for q = 0.025 and 0.975. Sign tests assume map-sign exchangeability. For the EAX replay, the raw and adjusted p-value fields are `two_sided_exact_signflip_p` and `supplementary_holm_two_contrasts`.
 
-The [current versioned release](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-reviewer-fixes-20261122) contains the English follow-up audit, map-wise numerical results, the conditional summary and portable analysis files. Author-controlled raw operational evidence and restricted native artifacts require separate authorized access.
+The [current versioned release](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-second-review-20261122) contains the English follow-up audit, map-wise numerical results, the conditional summary and portable analysis files. Author-controlled raw operational evidence and restricted native artifacts require separate authorized access.
+
+### S5.3 Sensitivity to the EAX stop-evidence check
+
+Holding the frozen e0316 exclusion fixed, both checks retain the official 199 EAX deliveries and 198 pairs per contrast. The sole rule difference is whether the saved preparation timestamp or native termination call must meet the 85 s lower bound. Under the later check, the archived candidate from e0316 passes the counterfactual replay. Its independently recounted length is used only in the following sensitivity rows.
+
+| Counterfactual check on all endpoints | EAX deliveries | Pairs | Map-equal ppm | 95% map-bootstrap interval, ppm | Two-contrast Holm p |
+| --- | ---: | ---: | ---: | --- | ---: |
+| Later rule, M/EAX | 200 | 199 | +24,017.41 | [+6,750.64, +50,815.90] | 0.000103 |
+| Later rule, K/EAX | 200 | 199 | +23,995.73 | [+6,730.79, +50,791.18] | 0.000103 |
+
+The comparison uses the same map and seed joins, bootstrap and exact tests as the reported follow-up. The first dispatch remains failed in the official results. The full stop-check and descriptive run-order tables are in the EAX audit in this release.
