@@ -1,11 +1,10 @@
-"""Restyle Figures 1–4 using frozen numeric exports; preserve Figure 5 bytes."""
+"""Redraw Figures 1–4 using supplied numerical and exploratory exports."""
 
 import csv
 from hashlib import sha256
 import json
 from math import isclose
 from pathlib import Path
-import shutil
 
 import matplotlib
 matplotlib.use("Agg")
@@ -16,14 +15,12 @@ from matplotlib.lines import Line2D
 HERE = Path(__file__).resolve().parent
 STATS = "03_数据与复算/复算产物"
 EXPLORE = "02_方法与统计补充/当前批次探索分析/results"
-R14 = "08_独立补验与执行证据/条件续搜120/report_final"
 ART = "assets/figures"
 FIGURES = {
     "fig1_primary": ("overall_effects_95ci.png", STATS),
     "fig2_maps": ("map_effects.png", STATS),
     "fig3_start_finish": ("cmk_start_vs_finish.png", EXPLORE),
     "fig4_order": ("cmk_order_sensitivity.png", EXPLORE),
-    "fig5_r14": ("R14_paired_distribution.png", R14),
 }
 COLORS = dict(zip(("01", "02", "03", "04"), ("#226A95", "#B54B30", "#258273", "#7B619C")))
 STRATA = dict(zip(("01", "02", "03", "04"), ("VLSI", "Clustered", "Uniform", "Geographic")))
@@ -163,25 +160,14 @@ def draw(source, output):
     right.legend(loc="lower right", framealpha=.94)
     save(fig, output, "fig4_order")
 
-    r14_path = source / R14 / "pairs_60.csv"
-    summary_path = source / R14 / "diagnostics_summary.json"
-    summary = json.loads(summary_path.read_text(encoding="utf-8-sig"))
-    assert len(rows(r14_path)) == 60 and summary["planned_seed_pairs"] == 60
-    for ext in ("png", "pdf"):
-        original = source / R14 / f"R14_paired_distribution.{ext}"
-        copied = output / f"fig5_r14.{ext}"
-        shutil.copyfile(original, copied)
-        assert digest(original) == digest(copied)
     receipt = {
         "inputs": {str(p.relative_to(source)).replace("\\", "/"): digest(p) for p in (
-            stats_path, map_path, pair_path, order_path, r14_path, summary_path,
-            source / R14 / "R14_paired_distribution.png", source / R14 / "R14_paired_distribution.pdf",
+            stats_path, map_path, pair_path, order_path,
         )},
         "outputs": {p.name: digest(p) for p in sorted(output.iterdir()) if p.suffix in (".png", ".pdf")},
         "figure3": {"plotted_pairs": len(data), "byte_identical_starts": len(same), "shorter_starts": len(shorter),
                     "all_negative_tail_points_retained": True, "y_equals_x_in_both_panels": True},
         "figure4_map_count": len(order_rows),
-        "figure5": {"valid_seed_pairs": len(rows(r14_path)), "original_image_bytes": True, "pools": 3},
     }
     (output / "plot_provenance.json").write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
 

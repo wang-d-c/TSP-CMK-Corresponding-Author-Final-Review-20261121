@@ -1,0 +1,25 @@
+{
+  "protocol": "30-second conditional fixed-start diagnostic; fixed pools in two maps",
+  "inputs_sha256": {
+    "outcomes_120.csv": "8fe87628d2ae008ec037456ce4d39b701922ffa0c826d51e162aa8b7eb3004d8",
+    "pairs_60.csv": "db8874f42a9c60aec80372601750feb4ab821036bdf02293ac6c61420bb33283",
+    "diagnostics_summary.json": "ecb6b137b60227e3eb4f9194757c63f43c68ac0bee4033e2ae53b04439251bc6"
+  },
+  "run_plan_sha256": "a29877a03404afb94ed556591ef1967d468a95f3222083a243ff4fe58a27916d",
+  "run_plan_identity_verified": true,
+  "outcomes_validated": 120,
+  "complete_pairs_matching_frozen_reference": 60,
+  "statistics_groups_matching_frozen_reference": 9,
+  "bootstrap_intervals_matching_exactly": 9,
+  "bootstrap_draws_per_group": 10000,
+  "python": "3.13.9",
+  "matplotlib": "3.10.6",
+  "outputs": {
+    "figure5_fixed_start.pdf": "c4b8464fb2b148a3e1aed10ef992ce2ed71059e461bd5d0663c1f97bb47d79b8",
+    "figure5_fixed_start.png": "f1b5ed3fc00bdb4ea3040a172586ab2e470661acf8ef947c0bfa4d87018e221f",
+    "r14_plot_data.csv": "fc0e4d5ef750e19304c46c3b0a97b7cf5f809fa280dbda68bd154f3d45be5048",
+    "r14_rebuilt_pairs.csv": "db8874f42a9c60aec80372601750feb4ab821036bdf02293ac6c61420bb33283",
+    "r14_statistics.csv": "a463fcd7c2cdb41324e078c189c964f63bf991cc44032a2c25774889cd3d1407"
+  },
+  "scope": "CSV and frozen-statistic replay; does not rerun native search or revalidate route geometry"
+}

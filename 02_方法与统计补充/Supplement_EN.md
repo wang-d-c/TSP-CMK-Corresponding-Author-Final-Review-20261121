@@ -130,6 +130,30 @@ The observer recorded at least one improving candidate committed with a charged 
 
 ![Figure S2. Map-wise mean paired shortening relative to EAX in the later follow-up. Panel A shows all 20 maps, with city counts in parentheses. Panel B enlarges the near-zero differences on five maps. M/EAX and K/EAX use 198 valid same-map same-seed pairs each. Positive ppm favors M or K and negative ppm favors EAX. The panel comparison is descriptive and uses the observed configuration and execution period.](../assets/figures/figS2_eax_map_effects.png){width=100%}
 
-The 30 s diagnostic gives 20 fresh continuation seeds per parent pool for C10k.0/981, genC15k.seed100004/2521 and genC15k.seed100004/1861. Both stored starts were continued for each new seed. The 120 runs give 60 valid pairs, with intervals calculated separately by resampling seeds within each selected pool. Reuse does not charge the original parent-pool generation or selection to this window. Two pools share genC15k.seed100004. These conditional results cannot identify a causal mechanism or a population map effect. The original 800-slot mechanism protocol remains deferred.
+### S5.1 Fixed-start continuation run rules
 
-The [current versioned release](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-author-review-v3-20261121) contains the English follow-up audit, map-wise numerical results, the conditional summary and portable analysis files. Author-controlled raw operational evidence and restricted native artifacts require separate authorized access.
+After inspecting the primary K/M results, we chose the three most negative outcomes: C10k.0/981, genC15k.seed100004/2521 and genC15k.seed100004/1861. The last two pools share one map. In each pool, both historical starts were continued with each of 20 new paired seeds. The 120 attempts yielded 60 valid pairs. These selected starts cannot represent the distribution of other pools or maps. The diagnostic cannot distinguish effects of GPX2 structure, timing, thermal conditions or another mechanism. The original 800-slot mechanism protocol remains deferred.
+
+| Component | Recorded rule |
+| --- | --- |
+| Implementation | The primary batch's LKH 3.0.14 Windows continuation build and search options (Table S2), compiled with GCC 16.2.0 w64devkit. The solver used logical CPU0 and the resource sampler used CPU1. |
+| Starts and seeds | Install verified stored tours with `INITIAL_TOUR_FILE=start.tour` and `INITIAL_TOUR_FRACTION=1`. The plan derives 20 new seeds via SHA-256. Each pairs the two starts, ten per order in each pool. |
+| Charged window | The monotonic clock starts at arm entry. It includes input and start checks, copies, setup, search, monitoring, certification, handoff and cleanup. Historical pool generation and start selection are outside the window. |
+| Deadlines | Stop request at 27.6 s, exit proof before 28 s, certified delivery before 29 s and cleanup before 30 s. |
+| Charged completion | 27.7333–28.0361 s after entry, observed after handoff and cleanup. The full-window limit is 30 s. |
+
+Continuation-binary SHA-256: `d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665`.
+
+### S5.2 Statistical specifications and numerical replay
+
+All effects use 10⁶ × (reference length − test length) / reference length. Positive ppm favors the test arm. Equal verified integer lengths count as ties. Quality calculations require a valid outcome from each arm in the relevant pair. Missing or invalid deliveries remain in the delivery accounting.
+
+| Series | Pairing, reference, and analysis unit | 95% percentile interval | Test and multiplicity |
+| --- | --- | --- | --- |
+| Primary 600 | Map and original seed. Reference M for K/M and C for K/C or M/C. Average valid pairs within maps, then weight maps equally. | Resample map means 100,000 times with replacement. Restart Python's random generator with seed 20261120 for each contrast. | Preregistered primary K/M. Exact two-sided rational sign flips include equal absolute effects. Zero terms do not affect the probability. The four secondary Holm entries are K/C, M/C and two EAX p = 1 placeholders. |
+| Later EAX 200 | Map and original seed. Match valid EAX with valid M or K. Reference EAX. Equal map weights. e0316 affects delivery only. | Same whole-map resampling and independently reset Python seed per contrast. | Separate follow-up. All 2²⁰ rational sign patterns, two-sided and inclusive of equality. Adjust only M/EAX and K/EAX by Holm. |
+| Fixed-start 120 | Selected pool and new seed. Reference M. Pair seeds and summarize each pool and its two order groups separately. | Resample paired effects in each cell 10,000 times with `Random.choices` at the observed cell size. Use seeds 20261121–20261123 in pool order above and 20261125–20261130 for order cells, M first then K first per pool. | Post hoc pool selection. Conditional descriptive intervals per pool, without a pooled map effect, null test or Holm adjustment. |
+
+All percentile intervals use linear interpolation at (B−1)q in the sorted B draws for q = 0.025 and 0.975. Sign tests assume map-sign exchangeability. For the EAX replay, the raw and adjusted p-value fields are `two_sided_exact_signflip_p` and `supplementary_holm_two_contrasts`.
+
+The [current versioned release](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-reviewer-fixes-20261122) contains the English follow-up audit, map-wise numerical results, the conditional summary and portable analysis files. Author-controlled raw operational evidence and restricted native artifacts require separate authorized access.

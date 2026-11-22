@@ -1,0 +1,5 @@
+method,map,seed,core_status,supplement_status,supplement_run_id,e0316
+K_new,ei8246,981,monitor_invalid,valid,REVIEW20_MAIN_ei8246_981_EAX_ref,False
+M_new,genE12k.seed100006,2521,valid,isolated_eax_evidence_failure,REVIEW20_MAIN_genE12k.seed100006_2521_EAX_ref,True
+K_new,genE12k.seed100006,2521,valid,isolated_eax_evidence_failure,REVIEW20_MAIN_genE12k.seed100006_2521_EAX_ref,True
+M_new,C10k.0,2301,monitor_invalid,valid,REVIEW20_MAIN_C10k.0_2301_EAX_ref,False

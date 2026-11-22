@@ -1,0 +1,7 @@
+group,checks,differences,max_abs_numeric_difference_ppm
+batch,8,0,0.0
+paired_run_rows,3565,0,0.0
+within_map_rows,361,0,0.0
+figure_S2_rows,561,0,0.0
+overall_inference,20,0,0.0
+table_5A,32,0,0.0

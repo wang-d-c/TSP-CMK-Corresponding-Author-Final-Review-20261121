@@ -1,0 +1,112 @@
+{
+  "diagnostic_version": "tsp_cmk_r14_30s_v1",
+  "registration_sha256": "d7370119a37d5a5a918fd247f5cc634ffb511a7225804b1f0b181ec867587861",
+  "diagnostic_admission_sha256": "b3b24d0235b7a0f76e3d8a5a6120e622c93a47898b5213d0af977c94af6bf0d4",
+  "plan_sha256": "a29877a03404afb94ed556591ef1967d468a95f3222083a243ff4fe58a27916d",
+  "analysis_code_sha256": "b3662c5f149ee31027415b1b531eddd97c2ba603d3740daa91f82f069076cb2a",
+  "main_selected_start_bindings_checked": 6,
+  "diagnostic_dispatches_terminals_and_live_route_file_hashes_checked": 120,
+  "native_parameter_files_and_seed_echoes_checked": 120,
+  "native_first_tour_witness_hashes_checked": 120,
+  "same_frozen_main_continuation_parameters_apart_from_seed": {
+    "PROBLEM_FILE": "problem.tsp",
+    "OUTPUT_TOUR_FILE": "tours/tour_$.tour",
+    "CANDIDATE_SET_TYPE": "POPMUSIC",
+    "POPMUSIC_MAX_NEIGHBORS": 5,
+    "POPMUSIC_SAMPLE_SIZE": 10,
+    "POPMUSIC_SOLUTIONS": 25,
+    "POPMUSIC_TRIALS": 1,
+    "POPMUSIC_INITIAL_TOUR": "NO",
+    "MAX_CANDIDATES": 5,
+    "SUBGRADIENT": "NO",
+    "MOVE_TYPE": 5,
+    "SUBSEQUENT_MOVE_TYPE": 5,
+    "BACKTRACKING": "NO",
+    "PATCHING_A": 1,
+    "PATCHING_C": 0,
+    "STOP_AT_OPTIMUM": "NO",
+    "TRACE_LEVEL": 1,
+    "GAIN_CRITERION": "YES",
+    "PRECISION": 100,
+    "SCALE": 1,
+    "RECOMBINATION": "GPX2",
+    "POPULATION_SIZE": 0,
+    "MAX_TRIALS": 100000,
+    "RUNS": 1,
+    "INITIAL_TOUR_FILE": "start.tour",
+    "INITIAL_TOUR_FRACTION": 1
+  },
+  "compared_engine_and_runtime_hashes": {
+    "methods.py": "207a562542c4ee1ba2d887f503fa4b70d399dbb4d7ed61151433f765ee82a0a4",
+    "owned_launch.py": "f20051697090933434781c5d2c46c93bc017dbe934d87d117a1493d797d39809",
+    "owned_runtime.py": "4b4baae3fa35aaca2b45f42156fdb9810112ae1c8a7b177ea9e7099e6db2bb8f",
+    "bind_author_lkh.py": "5bd0218284dcb7af1b9c6a810110d2fa37973e7847bc1a35efe4f08cfb58beec",
+    "LKH-review-common.exe": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+    "relink_receipt.json": "ccfab24576112d01d01c6bab529054eecab5777e9533e98363d11e90c4b7ace4"
+  },
+  "continuation_seeds": [
+    819820458,
+    1964736629,
+    1051278110,
+    1383610419,
+    776666968,
+    288928550,
+    1770331758,
+    1549982737,
+    191161699,
+    721077232,
+    245849185,
+    131467860,
+    1621130509,
+    347440972,
+    1710173594,
+    1638948673,
+    310948002,
+    1011263375,
+    1659222131,
+    1025697041
+  ],
+  "budget_boundaries_s": {
+    "request": 27.6,
+    "proof": 28,
+    "certification": 29,
+    "cleanup": 30
+  },
+  "charged_historical_parent_search_s": 0,
+  "at_valid_terminal_job_active_processes": 0,
+  "native_affinity_mask": 1,
+  "minimum_physical_available_bytes_from_monitors": 27679690752,
+  "first_dispatch": "2026-11-21T12:46:03+08:00",
+  "last_terminal": "2026-11-21T13:42:10+08:00",
+  "observed_ranges_s": {
+    "stop_request_s": [
+      27.600076199989417,
+      27.61578589999408
+    ],
+    "stop_proof_s": [
+      27.612854500010144,
+      27.63904259999981
+    ],
+    "native_launch_s": [
+      1.3614315000013448,
+      1.470706699998118
+    ],
+    "native_job_cleanup_s": [
+      27.613770200012368,
+      27.641156099998625
+    ],
+    "delivery_certification_s": [
+      27.64791580000019,
+      27.690899799999897
+    ],
+    "sampler_cleanup_observed_s": [
+      27.675394699996104,
+      27.954446799994912
+    ],
+    "completion_observed_s": [
+      27.73331209999742,
+      28.036099599994486
+    ]
+  },
+  "scope": "Read-only terminal and byte-integrity audit of existing files; no solver rerun"
+}

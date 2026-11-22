@@ -18,8 +18,8 @@
     "fig3_start_finish.png": "5b917b4ae1be812008a1d3e1b06d0e63294c51cf2b58a16ac4cf66140b9917e8",
     "fig4_order.pdf": "a36cd568f268a9bf6b0c556872c7252b8d7a2f3442609a7ef45d0c6807533ace",
     "fig4_order.png": "f63d07a26560e6f6573f168d5b70c8b8bd92678df4cdde0d21a9abbb674db9e3",
-    "fig5_r14.pdf": "6e75ea792e0698abaf4446b0faab5144d93e610a81e8754970b99f3032679301",
-    "fig5_r14.png": "c08a347ae21d3055fdd9048f0a9b45901ac7ae7d1f9029389080f07ff8039983"
+    "fig5_r14.pdf": "c4b8464fb2b148a3e1aed10ef992ce2ed71059e461bd5d0663c1f97bb47d79b8",
+    "fig5_r14.png": "f1b5ed3fc00bdb4ea3040a172586ab2e470661acf8ef947c0bfa4d87018e221f"
   },
   "figure3": {
     "plotted_pairs": 198,
@@ -31,8 +31,9 @@
   "figure4_map_count": 20,
   "figure5": {
     "valid_seed_pairs": 60,
-    "original_image_bytes": true,
-    "pools": 3
+    "independently_rendered": true,
+    "intervals_replayed_exactly": 9,
+    "replay": "02_统计复算/r14/replay_fixed_start.py"
   },
   "asset_migration": [
     {

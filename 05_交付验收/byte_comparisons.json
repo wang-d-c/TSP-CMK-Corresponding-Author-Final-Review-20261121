@@ -1,0 +1,86 @@
+[
+  {
+    "cohort": "core",
+    "reference": "complete_triplet_map.csv",
+    "expected_sha256": "394a008f3e867e66d28943adb21a42c5b2028a1d25423e3228cdc6815627ba99",
+    "actual_sha256": "394a008f3e867e66d28943adb21a42c5b2028a1d25423e3228cdc6815627ba99",
+    "byte_equal": true
+  },
+  {
+    "cohort": "core",
+    "reference": "complete_triplet_summary.csv",
+    "expected_sha256": "d0518494fca3454a2dcd95e4fe92a9671265c84d9bd2bcaddf2927d6c7e96c85",
+    "actual_sha256": "d0518494fca3454a2dcd95e4fe92a9671265c84d9bd2bcaddf2927d6c7e96c85",
+    "byte_equal": true
+  },
+  {
+    "cohort": "core",
+    "reference": "delivery_by_method.csv",
+    "expected_sha256": "aef7fd0398c30cc435d5c9e08bc4a85875cbca5e6c3b76475e1f191d124a5895",
+    "actual_sha256": "aef7fd0398c30cc435d5c9e08bc4a85875cbca5e6c3b76475e1f191d124a5895",
+    "byte_equal": true
+  },
+  {
+    "cohort": "core",
+    "reference": "excluded_triplets.csv",
+    "expected_sha256": "daf5e1de6d44c2e6dcd483b70f831370885e7b5d9742c9dc8133e3322b5f9700",
+    "actual_sha256": "daf5e1de6d44c2e6dcd483b70f831370885e7b5d9742c9dc8133e3322b5f9700",
+    "byte_equal": true
+  },
+  {
+    "cohort": "core",
+    "reference": "four_strata.csv",
+    "expected_sha256": "b77b3f575bfe92c5a12e45edab39df6ee82a0fa923de84b9a684435860bd31bd",
+    "actual_sha256": "b77b3f575bfe92c5a12e45edab39df6ee82a0fa923de84b9a684435860bd31bd",
+    "byte_equal": true
+  },
+  {
+    "cohort": "core",
+    "reference": "leave_one_map.csv",
+    "expected_sha256": "3a87a7ca4d8ff4f849af2ff0007195ec5de31b6135401b75df8823a8be01f519",
+    "actual_sha256": "3a87a7ca4d8ff4f849af2ff0007195ec5de31b6135401b75df8823a8be01f519",
+    "byte_equal": true
+  },
+  {
+    "cohort": "core",
+    "reference": "map_effects.csv",
+    "expected_sha256": "eec46d1b5c11f0c594a74aefc9eeb2bac4cc895503310ba76233b4dc9b6c912e",
+    "actual_sha256": "eec46d1b5c11f0c594a74aefc9eeb2bac4cc895503310ba76233b4dc9b6c912e",
+    "byte_equal": true
+  },
+  {
+    "cohort": "core",
+    "reference": "paired_effects.csv",
+    "expected_sha256": "508d84c0d6e336f158a74a6c4406277faa50d2745e7cff796fac315e95810a7c",
+    "actual_sha256": "508d84c0d6e336f158a74a6c4406277faa50d2745e7cff796fac315e95810a7c",
+    "byte_equal": true
+  },
+  {
+    "cohort": "eax",
+    "reference": "supplemental_eax_valid_pairs.csv",
+    "expected_sha256": "75dfabf957d6d59d3386108f94e8ad74f89b8f83adb5f3d1174c534f145b781b",
+    "actual_sha256": "75dfabf957d6d59d3386108f94e8ad74f89b8f83adb5f3d1174c534f145b781b",
+    "byte_equal": true
+  },
+  {
+    "cohort": "eax",
+    "reference": "supplemental_eax_map_effects.csv",
+    "expected_sha256": "d7a294dcd2de0bc7f8424ba083becef0b9e2954ba6f6ab40e47a435b8fe52329",
+    "actual_sha256": "d7a294dcd2de0bc7f8424ba083becef0b9e2954ba6f6ab40e47a435b8fe52329",
+    "byte_equal": true
+  },
+  {
+    "cohort": "eax",
+    "reference": "eax_map_effects_40.csv",
+    "expected_sha256": "ce41ef4c58ab1b8bfc78021fa7c7883f85cbfb5fede32990658541f2d15726e2",
+    "actual_sha256": "ce41ef4c58ab1b8bfc78021fa7c7883f85cbfb5fede32990658541f2d15726e2",
+    "byte_equal": true
+  },
+  {
+    "cohort": "r14",
+    "reference": "pairs_60.csv",
+    "expected_sha256": "db8874f42a9c60aec80372601750feb4ab821036bdf02293ac6c61420bb33283",
+    "actual_sha256": "db8874f42a9c60aec80372601750feb4ab821036bdf02293ac6c61420bb33283",
+    "byte_equal": true
+  }
+]
