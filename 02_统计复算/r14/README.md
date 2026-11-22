@@ -51,5 +51,5 @@ Historically producing the parent pool and the two selected starts, including th
 ## Evidence index
 
 - [Replay source](replay_fixed_start.py), [replay acceptance](replayed/r14_replay_receipt.json), [paired effects](replayed/r14_rebuilt_pairs.csv), [pool and order effects](replayed/r14_statistics.csv), [Figure 5 point data](replayed/r14_plot_data.csv), [vector PDF](replayed/figure5_fixed_start.pdf) and [400-dpi PNG](replayed/figure5_fixed_start.png).
-- [path-free acceptance receipt](r14_runtime_audit_receipt.json). The runtime audit requires controlled original terminal files, staged route bytes, and main-result bindings. The statistics replay can run from the numerical export.
+- [Public numerical replay](replay_fixed_start.py) and [path-free runtime audit receipt](r14_runtime_audit_receipt.json). The runtime audit requires controlled original terminal files, staged route bytes, and main-result bindings. The statistics replay can run from the numerical export.
 - R03 completed on the frozen numerical export and plan. R04 completed on the existing native binding, six main arms, and 120 original diagnostic runtime receipts. Neither check launched a solver.

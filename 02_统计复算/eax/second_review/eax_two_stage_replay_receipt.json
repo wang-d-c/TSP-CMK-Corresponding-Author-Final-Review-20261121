@@ -285,27 +285,6 @@
       }
     }
   },
-  "source_sha256": {
-    "run_review_eax.py": "bb485d285076106c70d731be75434913e7a0dcd4fd7c572b0548d64c4dd793b4",
-    "stop_gate_r13_a02.py": "9cb16ba4253fbe07ad646eb13c1d28dc19244611f6b5efb7da4d32ebfcad02e7",
-    "continue_r13_a02.py": "01c64900076054716b4c7dd9e33932b536954ae2e35f358955626280a5466eec",
-    "runtime_contract.json": "f86a13532bce63b083728cc196e2746477f70d8fcf7eac4debbc0dbf5eff1e1f",
-    "formal_admission.json": "8254d1ef9faad6b8bc44e8625699df6b329728bb29f356a704d4253de44367bc",
-    "r13_a02_continuation.json": "de45f1d9446b5101a963b73a16cdf8384cb5098ae20c7c774ea7e9266ad911af",
-    "eax_decimal_observer.py": "011f70f5d8b943927eab100c7f9ac0f759bbc9399b93b9abfea3b2938be23b31",
-    "decimal_eax_candidate.py": "7360d706d8423d673cd4e0c4fc2158416faf57c4d3deaa2bbfcd0dd9af0fe245",
-    "frozen_stop_adapter.py": "8d7aad9d973ef9cd519910ff4e2f301e0c844a206771c5293d8994635682ed3a",
-    "core_600_runs.csv": "f589f6382e02165ea575100b880b511b389a9691ce739feb638369d1d57bbbc7",
-    "supplemental_eax_summary.json": "54d68906b50ae09ef9c48b1734970135fb7fd9174779452a54a6e70d3fb4d05c",
-    "native_eax_pe": "db5e3f8d938aeb22d2d7d09a9218256b6e061b2c0149cf94e950bb407cff65a9",
-    "archive_analysis_source": "0d6d30afc8f08a4829c2f42e92cc81acc89a21aaaa3ac4ccc37ed221616932bd"
-  },
-  "archived_material_files_checked": {
-    "result.json": 200,
-    "job_final.json": 200,
-    "independent_validation.json": 200,
-    "w/result.json": 200
-  },
   "scopes": {
     "official": "Frozen 200 statuses, 199 valid, preserved first failure e0316.",
     "all_a02_hypothetical_only": "Read-only raw-gate counterfactual. It never replaces the observed e0316 failure or any official aggregation.",
@@ -349,5 +328,11 @@
     "fresh_read_only_geometry_recount": true,
     "whole_cycle_length": 79986083,
     "original_terminal_score": null
-  }
+  },
+  "public_input_sha256": {
+    "core_600_runs.csv": "f589f6382e02165ea575100b880b511b389a9691ce739feb638369d1d57bbbc7",
+    "supplemental_eax_summary.json": "54d68906b50ae09ef9c48b1734970135fb7fd9174779452a54a6e70d3fb4d05c",
+    "native_eax_pe": "db5e3f8d938aeb22d2d7d09a9218256b6e061b2c0149cf94e950bb407cff65a9"
+  },
+  "public_projection": "Numerical results and audit findings. Archive filenames and per-artifact inventories remain author-controlled."
 }

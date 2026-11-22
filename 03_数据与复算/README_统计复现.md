@@ -27,7 +27,7 @@ python reproduce.py --output recomputed
 | [复算产物/four_strata.csv](复算产物/four_strata.csv) · [复算产物/leave_one_map.csv](复算产物/leave_one_map.csv) · [复算产物/delivery_by_method.csv](复算产物/delivery_by_method.csv) | 四来源组、逐图留一和单独的交付状态。 |
 | [总体效应及 95% 区间](复算产物/overall_effects_95ci.pdf) · [逐图点图](复算产物/map_effects.pdf) · [有效配对累积分布](复算产物/pair_ecdf.pdf) | 三张图均有同名 PNG 版本。 |
 
-路线核验另需匹配的地图坐标与路线城市顺序。可用本目录账本的 `run_id`、`instance_sha256` 和 `route_sha256` 关联原始证据。公开范围见[根说明](../README.md)。重新求解另需依法取得的软件、冻结配置和计时执行环境。
+路线核验另需匹配的地图坐标与路线城市顺序。可用本目录账本的 `run_id`、`instance_sha256` 和 `route_sha256` 关联原始证据。获取条件见终审包的原始证据与审稿访问索引。重新求解另需依法取得的软件、冻结配置和计时执行环境。
 
 详见[数据字典](数据字典.md)、[统计补充与图注](统计补充与图注.md)及[隔离复算验收](复算验收.md)。
 

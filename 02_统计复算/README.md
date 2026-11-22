@@ -19,3 +19,9 @@ python -B -X utf8 "02_统计复算/replay_all.py" --output ../cmk-figures --figu
 各阶段产物写入 `core`、`eax` 和 `r14`。`byte_comparisons.json` 对账 8 个原主批 CSV、3 个 EAX CSV 和条件诊断完整配对 CSV。绘图追加 `figures`、`figure_s2`、`figure_5`。Figure 5 的数据从终点重算，旧图仍存于原条件续搜记录。历史图以及补充图 S1 的不变展示保留。向量 PDF 的创建时间等元数据可能随重绘而异。
 
 统计复算、图形再生、路线验环及从坐标重跑的可用范围各自见 [数据访问说明](../Data_Access_and_Archiving.md)。
+
+## EAX 透明度复算与输入绑定
+
+- [公开 EAX 原生进程与重启汇总](EAX重启审计/README.md)提供三份聚合表及统计口径。原始终态、stdout 和控制账本由作者受控保存。
+- 组种子、原生种子偏移、原生实现和构建指纹见 [英文补充 S5](../02_方法与统计补充/Supplement_EN.md)。审稿访问条件见 [数据访问说明](../Data_Access_and_Archiving.md)。
+- [冻结登记证据](holm/verified_replay/registration_chain.json)记录了运行前的内部哈希绑定。

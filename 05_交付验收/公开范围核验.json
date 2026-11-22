@@ -1,0 +1,11 @@
+{
+  "plain_text_files": 100,
+  "pdf_files": 22,
+  "pdf_pages": 60,
+  "pdf_annotation_link_count": 8,
+  "allowlist_file_count": 140,
+  "author_only_manifest_paths_included": 0,
+  "restricted_artifact_references": 0,
+  "private_path_secret_or_contact_findings": 0,
+  "scope": "Exact allowlist, forbidden file types and paths, configured private-path, contact and credential patterns in UTF-8 text and extracted PDF text, metadata and URI actions, and full relative paths found only in the author inventory. Original runtime evidence remains controlled."
+}

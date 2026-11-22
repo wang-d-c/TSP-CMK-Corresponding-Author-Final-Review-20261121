@@ -1,55 +1,42 @@
 {
   "evidence": {
     "original_registration": {
-      "basename": "新实验预登记候选.md",
       "sha256": "0c9729aeb59b845572bfa5271ccbdf46222e80543cb7572a2721a5d9f591d3f2"
     },
     "schedule": {
-      "basename": "主实验800_候选账本.csv",
       "sha256": "aa04d75c5e70919f5f10ca2ebee2f16cfdbf39a38315c573ab05e81bfd3c57bc"
     },
     "core_scope": {
-      "basename": "execution_scope.json",
       "sha256": "6932f05a9dca7035bb43ea675c9b0eacdb0292b1b71121063e20e1b6bcfa1d68"
     },
     "core_admission": {
-      "basename": "main_admission.json",
       "sha256": "10444a1b7826f0d7f4566b200fa1cbfe3b0355fed7535de5a77410c2341624b7"
     },
     "core_first_dispatch": {
-      "basename": "dispatch.json",
       "sha256": "609a164f90b0fbcb2acddc2222c57d9d5f1777c3e6f78b3b4731ac38f92939e4"
     },
     "core_statistics_code": {
-      "basename": "analyze_core.py",
       "sha256": "08c2164abda1fa8f80bbe9da9173f277243473e12abd59a24666bcee1116ee7b"
     },
     "core_frozen_statistics": {
-      "basename": "统计结果.json",
       "sha256": "fb86bfcf7f6f769dd134ea0623388713d6fc474eda98bb1318e55d100b089fa1"
     },
     "follow_up_instruction": {
-      "basename": "00_任务单聊天原文.txt",
       "sha256": "c9ee6c9c884865f9ecea9f2d9c99b85093e66e6a0b14334f9afa3efef1273c4b"
     },
     "follow_up_contract": {
-      "basename": "runtime_contract.json",
       "sha256": "f86a13532bce63b083728cc196e2746477f70d8fcf7eac4debbc0dbf5eff1e1f"
     },
     "follow_up_admission": {
-      "basename": "formal_admission.json",
       "sha256": "8254d1ef9faad6b8bc44e8625699df6b329728bb29f356a704d4253de44367bc"
     },
     "follow_up_first_dispatch": {
-      "basename": "e0001_dispatch.json",
       "sha256": "13875870cf1471f2538829e31eceed756d57b4287fc39d690854373baa429396"
     },
     "follow_up_statistics_code": {
-      "basename": "analyze_review_eax.py",
       "sha256": "0d6d30afc8f08a4829c2f42e92cc81acc89a21aaaa3ac4ccc37ed221616932bd"
     },
     "follow_up_frozen_statistics": {
-      "basename": "supplemental_eax_summary.json",
       "sha256": "54d68906b50ae09ef9c48b1734970135fb7fd9174779452a54a6e70d3fb4d05c"
     }
   },
@@ -74,5 +61,6 @@
   "independent_two_contrast_holm_in_archived_follow_up_report": true,
   "explicit_pre_start_two_only_holm_rule_in_verified_follow_up_contract": false,
   "timestamps_source": "Recorded internal evidence fields. No public preregistration-service timestamp is claimed.",
-  "new_solver_runs": 0
+  "new_solver_runs": 0,
+  "public_projection": "Archive provenance roles and hashes. Source filenames remain author-controlled."
 }

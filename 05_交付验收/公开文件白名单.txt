@@ -22,6 +22,10 @@
 02_方法与统计补充/当前批次探索分析/results/order_by_map.csv
 02_方法与统计补充/当前批次探索分析/results/start_end_pairs.csv
 02_方法与统计补充/方法与计时核查.md
+02_统计复算/EAX重启审计/README.md
+02_统计复算/EAX重启审计/replayed/descriptive_effects_by_process_count.csv
+02_统计复算/EAX重启审计/replayed/native_process_distribution.csv
+02_统计复算/EAX重启审计/replayed/native_restarts_by_map.csv
 02_统计复算/README.md
 02_统计复算/README_第二轮.md
 02_统计复算/eax/README.md
@@ -88,10 +92,11 @@
 05_交付验收/plot_replay.json
 05_交付验收/公开文件白名单.txt
 05_交付验收/公开校验说明.md
+05_交付验收/公开范围核验.json
+05_交付验收/公开链接核查.csv
+05_交付验收/公开链接核查.json
 05_交付验收/第二轮核验/三批CSV对账.json
 05_交付验收/第二轮核验/三批复算及重绘命令.json
-05_交付验收/第二轮核验/公开链接核查.csv
-05_交付验收/第二轮核验/公开链接核查.json
 05_交付验收/第二轮核验/第二轮执行回执.json
 08_独立补验与执行证据/EAX200/本轮公平性审计/EAX_and_R14_audit_EN.md
 08_独立补验与执行证据/EAX200/本轮公平性审计/EAX_map_effects_and_near_zero_detail.pdf

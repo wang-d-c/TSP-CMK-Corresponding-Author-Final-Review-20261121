@@ -1,6 +1,6 @@
 # Data access and archiving
 
-The [current review package](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-final-science-20261122) contains portable numerical replays for three separate cohorts. The [v3 package](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-author-review-v3-20261121) and previous reference artifacts remain versioned. The 600-run main batch, the 200-slot later EAX run block, and the 120-run fixed-start diagnostic have separate time blocks and statistical scopes.
+The [current public package](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-eax-transparency-20261122) contains portable numerical replays for three separate cohorts. The [v3 package](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-author-review-v3-20261121) and previous reference artifacts remain versioned. The 600-run main batch, the 200-slot later EAX run block, and the 120-run fixed-start diagnostic have separate time blocks and statistical scopes.
 
 | Capability | What the review package provides |
 | --- | --- |
@@ -10,6 +10,8 @@ The [current review package](https://github.com/wang-d-c/TSP-CMK-Corresponding-A
 | End-to-end solve from coordinates | Requires the matching maps, authorized frozen implementation or build artifacts, the recorded operating environment and the timing and verification controls. The public numerical package does not establish that an external party can rerun the frozen solver workflow. |
 
 The authors still need to confirm which routes, maps and frozen implementations may be shared and test the approved channel with the intended access scope. The study's recorded software hashes identify the frozen implementations. Distribution rights remain to be confirmed separately. [LKH upstream](https://keldhelsgaun.github.io/) · [GA-EAX upstream](https://github.com/nagata-yuichi/GA-EAX)
+
+The [public native-process tables](02_统计复算/EAX重启审计/README.md) document aggregate process and restart counts. A third party needs separately authorized per-run evidence to repeat the complete lifecycle audit. Request access through the study authors once the corresponding-author channel is confirmed. No external reviewer account has yet been tested.
 
 The public package has no independently verified Zenodo deposit or DOI. Use the stated release or the corresponding commit to cite this review snapshot.
 
