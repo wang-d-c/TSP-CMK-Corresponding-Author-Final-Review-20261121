@@ -1,6 +1,6 @@
 # Data access and archiving
 
-The [current review package](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-second-review-20261122) contains portable numerical replays for three separate cohorts. The [v3 package](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-author-review-v3-20261121) and previous reference artifacts remain versioned. The 600-run main batch, the 200-slot later EAX run block, and the 120-run fixed-start diagnostic have separate time blocks and statistical scopes.
+The [current review package](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-final-science-20261122) contains portable numerical replays for three separate cohorts. The [v3 package](https://github.com/wang-d-c/TSP-CMK-Corresponding-Author-Final-Review-20261121/releases/tag/cmk-author-review-v3-20261121) and previous reference artifacts remain versioned. The 600-run main batch, the 200-slot later EAX run block, and the 120-run fixed-start diagnostic have separate time blocks and statistical scopes.
 
 | Capability | What the review package provides |
 | --- | --- |

@@ -1,4 +1,4 @@
-"""Recompute R16 from the frozen core and EAX numerical ledgers without solvers."""
+"""Replay all three Holm views from the frozen ledgers without running a solver."""
 
 import argparse
 from bisect import bisect_left, bisect_right
@@ -179,7 +179,13 @@ def main():
         'verified_input_sha256': {FILES[name][0].name: digest for name, digest in file_hashes.items()},
         'valid_by_arm': counts, 'all_frozen_raw_p_and_pair_counts_matched': True,
         'original_holm_a_and_b_match_frozen': True,
-        'comparison_c_is_cross_period_sensitivity': True,
+        'reporting_roles': {
+            'A': 'historical_core_stage_snapshot_with_unestimated_eax_placeholders',
+            'B': 'auxiliary_two_contrast_calculation_as_reported_in_eax_follow_up',
+            'C': 'final_inference_for_the_prespecified_four_secondary_contrasts',
+        },
+        'primary_K_over_M_separate_from_secondary_family': True,
+        'cohort_execution_periods_retained': True,
         'four_observed_secondary_decisions_unchanged_at_0_05': unchanged,
         'new_solver_runs': 0, 'records': records,
     }

@@ -1,10 +1,10 @@
-# Statistical supplement for the 600-run experiment
+# Statistical supplement for the core-stage snapshot
 
 The 600 registered core slots include 596 valid completions and four invalid deliveries. C, M and K delivered 198, 199 and 199 valid tours out of 200 attempts each. The invalid deliveries consist of two paging-protection stops during execution, one pre-launch physical-memory threshold failure and one disk-full interruption. The experiment recorded no ordinary budget non-deliveries. The quality estimand is conditional on valid delivery by both arms. Delivery frequencies are reported separately.
 
-For each eligible map and seed, the reduction is one million times the difference between the reference and trial lengths divided by the reference length. Positive values favor the trial arm. We average over eligible seeds within each map, then give the map means equal weight. The preregistered K/M test is a two-sided exact map-level sign-flip test with independent map-wise sign symmetry under the null. Percentile intervals use 100,000 resamples of maps with seed 20261120. The interval describes uncertainty across the study maps under this resampling model. The secondary Holm family includes K/C, M/C, K/EAX and M/EAX. For this original family only, the two unavailable EAX contrasts contribute p=1 adjustment placeholders. Empirical estimates and Holm adjustment for the independently timed EAX follow-up appear in its [separate report](../02_统计复算/eax/README.md).
+For each eligible map and seed, the reduction is one million times the difference between the reference and trial lengths divided by the reference length. Positive values favor the trial arm. We average over eligible seeds within each map, then give the map means equal weight. The preregistered K/M test is a two-sided exact map-level sign-flip test with independent map-wise sign symmetry under the null. Percentile intervals use 100,000 resamples of maps with seed 20261120. The interval describes uncertainty across the study maps under this resampling model. The prespecified secondary Holm family includes K/C, M/C, K/EAX and M/EAX. The table below preserves the core-stage snapshot. Its adjustment used p = 1 placeholders for the two then unavailable EAX contrasts.
 
-| Comparison | Valid pairs | Shorter / tied / longer | Map-equal mean ppm | 95% map-bootstrap interval ppm | p |
+| Comparison | Valid pairs | Shorter / tied / longer | Map-equal mean ppm | 95% map-bootstrap interval ppm | Core-stage p |
 |---|---:|---:|---:|---:|---:|
 | K/M | 198 | 97 / 28 / 73 | −9.98 | [−43.47, +15.36] | 0.647730 |
 | K/C | 197 | 105 / 6 / 86 | +117.59 | [+59.78, +186.98] | 0.000252 (Holm) |
@@ -31,4 +31,4 @@ These four source groups are descriptive. No interaction test was added. A share
 
 **Seed-pair distributions.** The empirical cumulative distributions show one observation per valid map and seed for each comparison. Their horizontal scale retains the observed tails. The empirical distributions weight seed pairs equally. The main effect averages the seed pairs within each map before applying equal weights to the maps. [Pair distributions](复算产物/pair_ecdf.pdf)
 
-The [second-review Holm replay](../02_统计复算/holm/README.md) links the original four-contrast family to its frozen registration and reports a joint adjustment of the four later available raw p-values as a cross-period sensitivity analysis.
+The final four-contrast Holm adjustment gives 0.000206 for K/C, K/EAX and M/EAX and 0.000561 for M/C. The [Holm replay](../02_统计复算/holm/README.md) links both views to their frozen registration and labels the [later EAX two-contrast calculation](../02_统计复算/eax/README.md) as supplementary. It retains the original cohorts, denominators and pair counts.

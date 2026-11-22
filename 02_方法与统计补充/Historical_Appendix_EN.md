@@ -1,6 +1,6 @@
 # Historical Appendix for the R4 Comparison
 
-These tables and figures document the earlier R4 study. The 600-run primary analysis and its Supplement use separate numbering. Historical Tables H1–H9 and Figures H1–H3 are indexed in this appendix.
+These tables and figures document the earlier R4 study. The 600-run primary analysis and its Supplement use separate numbering. Historical Tables H1–H9 and Figures H1–H3 are indexed in this appendix. Table H9 reports the registered five-contrast Holm analysis for historical R4. The current C/M/K/EAX study’s separately registered four-contrast secondary family is documented in its main text and Supplement S5.2.
 
 **Table H2. R4 map-level means of paired seed reductions (ppm). The V242- prefix is omitted in display labels. Values near zero retain sufficient precision to show their sign.**
 

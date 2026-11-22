@@ -4,9 +4,9 @@
 
 All 200 EAX attempts reached a terminal state. Exact integer EUC_2D recounts and Hamiltonian checks were repeated on the 199 valid saved tours. The unscored first-attempt evidence failure, `e0316`, remains in the original ledger. The original audit classified 78 of 79 attempts as valid; the corrected post-run audit accepted all 121 subsequently dispatched attempts. The native executable, wrapper, charged work and time limits stayed fixed. The follow-up ran separately on November 21, 2026, 13:47:30–19:21:31 Beijing time (UTC+08:00).
 
-For each map and seed, shortening equals 10⁶ times the EAX length minus M or K length, divided by the EAX length. Map means receive equal weight. The percentile intervals come from 100,000 map bootstrap resamples, and the exact two-sided sign-flip tests depend on independent sign exchangeability across maps under the null. The two Holm adjustments shown here form a separate follow-up family. Each contrast loses one pair to `e0316` and one to a monitoring failure in its corresponding original arm.
+For each map and seed, shortening equals 10⁶ times the EAX length minus M or K length, divided by the EAX length. Map means receive equal weight. The percentile intervals come from 100,000 map bootstrap resamples, and the exact two-sided sign-flip tests depend on independent sign exchangeability across maps under the null. The table retains the auxiliary two-contrast Holm calculation from the original EAX follow-up. The final four-contrast Holm adjustment gives 0.000206 for K/C, K/EAX and M/EAX and 0.000561 for M/C. [Final Holm replay](../../../02_统计复算/holm/README.md) Each contrast loses one pair to `e0316` and one to a monitoring failure in its corresponding original arm.
 
-| Contrast | Valid pairs | LKH arm shorter / tied / EAX shorter | Mean ppm | 95% map bootstrap interval ppm | Holm p |
+| Contrast | Valid pairs | LKH arm shorter / tied / EAX shorter | Mean ppm | 95% map bootstrap interval ppm | Auxiliary follow-up Holm p |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | M versus EAX | 198 | 159 / 2 / 37 | +24030.25 | [+6763.64, +50836.32] | 0.000102997 |
 | K versus EAX | 198 | 164 / 3 / 31 | +24008.70 | [+6742.41, +50802.43] | 0.000102997 |

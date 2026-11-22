@@ -21,14 +21,14 @@ Slot `e0316` is the only disagreement. It logged preparation at 84.999985801 s, 
 
 The last two rows show a read-only counterfactual that applies a02 to `e0316` as well. Its already archived route passed the a02 audit with dual archived recounts, and an additional local EUC_2D geometry recount of that single archived route confirmed the length and hashes. The counterfactual is audit-only. The published sample and the archived terminal keep their original eligibility and score.
 
-| Scoring scope | Contrast | Valid pairs | Map-equal mean ppm | 95% map-bootstrap interval ppm | Raw map sign-flip p | Separate two-comparison Holm p |
+| Scoring scope | Contrast | Valid pairs | Map-equal mean ppm | 95% map-bootstrap interval ppm | Raw map sign-flip p | Auxiliary follow-up Holm p |
 | --- | --- | ---: | ---: | --- | ---: | ---: |
 | Official and both failure-preserving replays | M/EAX | 198 | 24030.25 | [6763.64, 50836.32] | 0.0000591278076171875 | 0.000102996826171875 |
 | Official and both failure-preserving replays | K/EAX | 198 | 24008.70 | [6742.41, 50802.43] | 0.0000514984130859375 | 0.000102996826171875 |
 | Raw a02 counterfactual, never scored in the official sample | M/EAX | 199 | 24017.41 | [6750.64, 50815.90] | 0.0000591278076171875 | 0.000102996826171875 |
 | Raw a02 counterfactual, never scored in the official sample | K/EAX | 199 | 23995.73 | [6730.79, 50791.18] | 0.0000514984130859375 | 0.000102996826171875 |
 
-The replays use the original 100,000 map bootstrap draws, seed `20261120`, exact two-sided map sign flips and the same two-comparison follow-up Holm calculation. The original 600-run statistics and its Holm inputs are separate.
+The replays use the original 100,000 map bootstrap draws, seed `20261120`, exact two-sided map sign flips and the two-contrast adjustment reported in the EAX follow-up. This table retains that auxiliary calculation to assess the effect of the stop rule. The final prespecified four-contrast adjustment uses the official scores and is documented in the [Holm replay](../../holm/README.md). The original 600-run core-stage snapshot remains separate.
 
 ## Descriptive sensitivity by original M/K order
 
